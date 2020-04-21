@@ -127,6 +127,7 @@ fieldset {
         color: #495d70;
         font-weight: 400; 
         font-family: Amiri;
+        margin-top: 20px;
     }
 
     .placeholder {
@@ -137,6 +138,7 @@ fieldset {
       color: #a8adb2;
       justify-content: right;
       align-items: flex-end;
+      padding: 12px;
     }
     
     hr .one {
@@ -153,6 +155,16 @@ fieldset {
       overflow: visible; */
       text-align: center;
       height: 2px;
+    }
+
+    .contact {
+      display:flex;
+      flex-direction: row;
+    }
+
+    .format {
+      display:flex;
+      flex-direction:row;
     }
 
     .choice {

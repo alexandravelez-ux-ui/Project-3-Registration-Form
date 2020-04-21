@@ -29,7 +29,7 @@
        
         <legend><h2>Contact Information</h2></legend>
                 <form>
-                        <fieldset>
+                        <fieldset class="contact">
                             <label class="label" for="Name">Full Name</label>
                             <input class="placeholder" type="text" id="Name" name="user_name" placeholder="First and Last Name" required>
                             
@@ -97,32 +97,35 @@
                                     <option value="West Virginia">West Virginia</option>
                                     <option value="Wisconsin">Wisconsin</option>
                                     <option value="Wyoming">Wyoming</option>
+                            </select>
+                            
                             <label class="label" for="ZipCode">Zip Code</label>
                             <input class="placeholder" type="text" id="ZipCode" name="user_zipcode" placeholder="Zip Code">
                         </fieldset>
                     </form> 
         <legend><h2>Newsletter</h2></legend>
                 <form>
-                    <h3>Select the newsletter you'd like to receive</h3>
+                    <fieldset class="format">
+                        <h3>Select the newsletter you'd like to receive</h3>
 
-                            <div class="choice" id="subscription" name="user_subscription">
-                                    <input type="checkbox" value="HTML Newsletter">HTML News</checkbox>
-                                    <input type="checkbox" value="CSS News">CSS News</checkbox>
-                                    <input type="checkbox" value="Javascript News">Javascript News</checkbox>
-                            </div>
+                                <div class="choice" id="subscription" name="user_subscription">
+                                        <input type="checkbox" value="HTML Newsletter">HTML News</checkbox>
+                                        <input type="checkbox" value="CSS News">CSS News</checkbox>
+                                        <input type="checkbox" value="Javascript News">Javascript News</checkbox>
+                                </div>
 
-                    <h3>Newsletter Format</h3>
-                            <div class="choice"  id="format" name="user_format">
-                                <input type="radio" value="HTML">HTML</radio>
-                                <input type="radio" value="Text">Plain Text</radio>
-                            </div>
+                        <h3>Newsletter Format</h3>
+                                <div class="choice"  id="format" name="user_format">
+                                    <input type="radio" value="HTML">HTML</radio>
+                                    <input type="radio" value="Text">Plain Text</radio>
+                                </div>
 
-                    <h3>Other Topics you'd like to hear about</h3>
-                            <textarea id="topics" name="user_topics"></textarea>
-                    
-                    
-                        <button class="button" type="submit">Sign Up</button>
-
+                        <h3>Other Topics you'd like to hear about</h3>
+                                <textarea id="topics" name="user_topics"></textarea>
+                        
+                        
+                            <button class="button" type="submit">Sign Up</button>
+                    </fieldset>
                 </form>
 
     </main>
