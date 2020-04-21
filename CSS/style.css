@@ -189,7 +189,8 @@ fieldset {
     }
 
     .format {
-      display:block;
+      display:inline-block;
+      flex-direction: column;
       /* flex-direction:row; */
     }
 
@@ -201,7 +202,14 @@ fieldset {
       color: #495d70;
       justify-content: right;
       align-items: flex-end;
-      display: block;
+      display: inline-block;
+      flex-direction:column;
+    }
+
+    .checkbox {
+      margin: 12px 8px 12px 0;
+      display: inline-block;
+      flex-direction:column;
     }
 
     .form {
@@ -231,7 +239,7 @@ fieldset {
     }
     .button {
       padding: 20px;
-      width: 288px;
+      width: 100%;
       display:block;
       /* margin: 0 auto; */
       margin-top:20px
