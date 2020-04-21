@@ -28,7 +28,6 @@ header {
 h1, 
 h2,
 h3 {
-  justify-content: center;
   align-items: center;
   display: flex;
 }
@@ -53,6 +52,8 @@ h2 {
   font-weight: 700;
   line-height: 1.5rem;
   color: #2d3945;
+  text-align:center;
+  margin: 4px 0; 
 }
 
 h3 {
@@ -105,18 +106,30 @@ fieldset {
 
 @media (min-width: 320px) {
     
+    main {
+      margin:0px 14px;
+    }
+
+    header {
+      width:100%;
+    }
+
     h1 {
         justify-content: center;
         margin: 16px 50px;
     }
 
     h2 {
-      padding-top: 16px;
       justify-content: center;
       align-items: center;
       display: flex;
       text-align:center;
+      margin-top: 16px;
     } 
+
+    h3 {
+      text-align:left;
+    }
 
     p {
       padding:0 40px;
@@ -127,7 +140,7 @@ fieldset {
         color: #495d70;
         font-weight: 400; 
         font-family: Amiri;
-        margin-top: 20px;
+        margin: 10px 0px;
     }
 
     .placeholder {
@@ -136,35 +149,48 @@ fieldset {
       font-family: Amiri;
       font-style: italic;
       color: #a8adb2;
-      justify-content: right;
-      align-items: flex-end;
+      background-color: #eff0f1;
+      border:none;
       padding: 12px;
+      text-align: right;
     }
     
-    hr .one {
+    hr {
+      border: 0;
+      display:block;
+      width: 90%;               
+      background-color:#2d3945;
+      /* height: 4px; */
+    } 
+
+    .one {
       border: none;
-      /* border-top: 4px single #2d3945; */
+      border-top: 4px single #2d3945; 
       color: #2d3945;
       text-align: center;
       height: 4px;
+      margin-top: -4px;
     }
 
-    hr .two {
+    .two {
       border: none;
-      /* border-top: 4px single #2d3945;
-      overflow: visible; */
+      border-top: 4px single #2d3945;
+      overflow: visible; 
       text-align: center;
       height: 2px;
+      margin-top: -4px;
     }
 
-    .contact {
+    .contact,
+    .choice,
+    .topics {
       display:flex;
       flex-direction: row;
     }
 
     .format {
-      display:flex;
-      flex-direction:row;
+      display:block;
+      /* flex-direction:row; */
     }
 
     .choice {
@@ -175,6 +201,7 @@ fieldset {
       color: #495d70;
       justify-content: right;
       align-items: flex-end;
+      display: block;
     }
 
     .form {
@@ -185,15 +212,29 @@ fieldset {
       background: #eff0f1;
 
     }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin: 0 4px 8px 0;
+    }
+
 
     .input {
       padding: 24px 0;
       margin: 50px 0;
     }
 
+    textarea {
+      background-color: #eff0f1;
+      width:100%;
+      margin: 0 auto;
+      height: 100px;
+    }
     .button {
-      padding: 20px auto;
-      width: 80%;
+      padding: 20px;
+      width: 288px;
+      display:block;
+      /* margin: 0 auto; */
+      margin-top:20px
     }
 }
 
