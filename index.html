@@ -107,17 +107,17 @@
                     <fieldset class="format">
                         <h3>Select the newsletter you'd like to receive</h3>
 
-                                <div class="choice checkbox" id="subscription" name="user_subscription">
-                                        <input type="checkbox" value="HTML Newsletter">HTML News</checkbox>
-                                        <input type="checkbox" value="CSS News">CSS News</checkbox>
-                                        <input type="checkbox" value="Javascript News">Javascript News</checkbox>
+                                <div class="choice" id="subscription" name="user_subscription">
+                                        <input type="checkbox" value="HTML Newsletter"><label class="light" for="HTMLNewsletter">HTML News</label><br>
+                                        <input type="checkbox" value="CSS News"><label class="light" for="CSSNews">CSS News</label><br>
+                                        <input type="checkbox" value="Javascript News"><label class="light" for="JavascriptNews">Javascript News</label>
                                 </div>
 
                         <h3>Newsletter Format</h3>
                                 <div class="choice"  id="format" name="user_format">
-                                    <input type="radio" value="HTML">HTML</radio>
-                                    <input type="radio" value="Text">Plain Text</radio>
-                                </div>
+                                    <input type="radio" value="HTML"><label class="light" for="HTML">HTML</label><br>
+                                    <input type="radio" value="Text"><label class="light" for="PlainText">Plain Text</label>   
+                                </div> 
 
                         <h3>Other topics you'd like to hear about</h3>
                                 <textarea id="topics" name="user_topics"></textarea>

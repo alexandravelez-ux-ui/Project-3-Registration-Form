@@ -165,7 +165,7 @@ fieldset {
 
     .one {
       border: none;
-      border-top: 4px single #2d3945; 
+      border-top: 4px #2d3945; 
       color: #2d3945;
       text-align: center;
       height: 4px;
@@ -174,7 +174,7 @@ fieldset {
 
     .two {
       border: none;
-      border-top: 4px single #2d3945;
+      border-top: 4px #2d3945;
       overflow: visible; 
       text-align: center;
       height: 2px;
@@ -188,11 +188,16 @@ fieldset {
       flex-direction: row;
     }
 
-    .format {
+    /* .format {
       display:inline-block;
       flex-direction: column;
-      /* flex-direction:row; */
-    }
+
+       flex-direction:row;
+      background-color: #ADACB5; 
+      width: 100%;
+      margin: 0 0; 
+      padding:0 0;
+    } */
 
     .choice {
       font-size: 16px;
@@ -210,6 +215,10 @@ fieldset {
       margin: 12px 8px 12px 0;
       display: inline-block;
       flex-direction:column;
+    }
+
+    #ZipCode {
+      padding: 0 -40px;
     }
 
     .form {
