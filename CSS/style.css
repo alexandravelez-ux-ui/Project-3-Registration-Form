@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* =======================
+     BASE STYLES
+=========================*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+  width:100%;
+  background-color: #2d3945;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h1, 
+h2,
+h3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*Typography */
+
+h1 {
+  font-family:Amiri;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  justify-content: center;
+  display:flex;
+  
+}
+
+h2 {
+  font-family:Amiri;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #2d3945;
+}
+
+h3 {
+  font-family:Amiri;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #2d3945;
+}
+
+h4 {
+  font-family:Amiri;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color:#b3b8bb;
+}
+
+p {
+
+  font-family:Amiri;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.0rem;
+  color: #b7bcbf;
+  text-align: center;
+
+} 
+
+fieldset {
+  border: none;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.button {
+  background-color: #4ebbb5;
+  color:white; 
+  border-radius: 5px;
+  border:none;
+  padding: 8px 0px;
+  align-content: center;
+
+}
+
+/* =======================
+  MOBILE VERSION
+=========================*/
+
+@media (min-width: 320px) {
+    
+    h1 {
+        justify-content: center;
+        margin: 16px 50px;
+    }
+
+    h2 {
+      padding-top: 16px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      text-align:center;
+    } 
+
+    p {
+      padding:0 40px;
+    }
+
+    .label {
+        font-size: 14px;
+        color: #495d70;
+        font-weight: 400; 
+        font-family: Amiri;
+    }
+
+    .placeholder {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: Amiri;
+      font-style: italic;
+      color: #a8adb2;
+      justify-content: right;
+      align-items: flex-end;
+    }
+    
+    hr .one {
+      border: none;
+      /* border-top: 4px single #2d3945; */
+      color: #2d3945;
+      text-align: center;
+      height: 4px;
+    }
+
+    hr .two {
+      border: none;
+      /* border-top: 4px single #2d3945;
+      overflow: visible; */
+      text-align: center;
+      height: 2px;
+    }
+
+    .choice {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Amiri;
+      font-style: normal;
+      color: #495d70;
+      justify-content: right;
+      align-items: flex-end;
+    }
+
+    .form {
+      padding: 20px 0;
+      max-width:320px; 
+      border-radius: 8px;
+      margin: 10px auto;
+      background: #eff0f1;
+
+    }
+
+    .input {
+      padding: 24px 0;
+      margin: 50px 0;
+    }
+
+    .button {
+      padding: 20px auto;
+      width: 80%;
+    }
+}
+
+input:focus {
+  background-color: #eff0f1;
+  border: 1px solid #46698b;
+}
+
+/* .textarea {
+  background-color: #eff0f1;
+} */
+
+/* .fieldborder {
+  border: 1px solid #46698b;
+} */
+
+
+
+/* ========================
+   TABLET & DESKTOP VERSION
+==========================*/
+
+@media (min-width: 768px) {
+  
+}
