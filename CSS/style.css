@@ -13,9 +13,10 @@
 body {
     display: flex;
     flex-direction:column;
-    margin: 0 auto;
+    margin: 0 0;
     justify-content: center;
     align-items: center;
+    width: 100%
 }
 
 header {
@@ -23,6 +24,14 @@ header {
   background-color: #2d3945;
   align-items: center;
   margin: 0 auto;
+}
+
+.format {
+  max-width:100%;
+  background-color: #c8e0fa;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 20px; 
 }
 
 h1, 
@@ -48,7 +57,7 @@ h1 {
 
 h2 {
   font-family:Amiri;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.5rem;
   color: #2d3945;
@@ -58,7 +67,7 @@ h2 {
 
 h3 {
   font-family:Amiri;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.5rem;
   color: #2d3945;
@@ -87,7 +96,7 @@ p {
 fieldset {
   border: none;
   margin: 0 auto;
-  padding: 10px 0;
+  width:100%;
 }
 
 .button {
@@ -95,8 +104,11 @@ fieldset {
   color:white; 
   border-radius: 5px;
   border:none;
-  padding: 8px 0px;
+  padding: 2px 0px;
   align-content: center;
+  font-family:Amiri;
+  font-weight:700;
+  font-size:22px;
 
 }
 
@@ -114,9 +126,22 @@ fieldset {
       width:100%;
     }
 
+    html {
+      width: 100%;
+      min-height: 100%;
+   }
+      
+   body {
+      width: inherit;
+      min-height: inherit;
+      margin: 0;
+      padding: 0;
+   }
+   
+
     h1 {
         justify-content: center;
-        margin: 16px 50px;
+        margin: 24px 50px;
     }
 
     h2 {
@@ -124,7 +149,8 @@ fieldset {
       align-items: center;
       display: flex;
       text-align:center;
-      margin-top: 16px;
+      margin-top: 20px;
+      margin-left:16px;
     } 
 
     h3 {
@@ -136,11 +162,17 @@ fieldset {
     }
 
     .label {
-        font-size: 14px;
+        font-size: 16px;
         color: #495d70;
         font-weight: 400; 
         font-family: Amiri;
         margin: 10px 0px;
+        margin-left:16px;
+    }
+
+    .required-label {
+       text-align:left;
+       
     }
 
     .placeholder {
@@ -150,11 +182,45 @@ fieldset {
       font-style: italic;
       color: #a8adb2;
       background-color: #eff0f1;
+      padding: 16px;
+      text-align: left;
+      border-radius: 2px 2px;
       border:none;
-      padding: 12px;
-      text-align: right;
+      margin-left:16px;
+    }
+
+    .placeholder#Name {
+      text-align:right;
     }
     
+    .placeholder#Email {
+      text-align:right;
+    }
+
+    input#ZipCode.placeholder {
+      max-width:45%;
+
+    }
+
+    select#State.placeholder {
+      width:95%;
+    }
+
+    fieldset.format {
+      width:100%;
+      background-color:#c8e0fa;
+    }
+
+    .placeholder 
+    .right {
+      text-align:right;
+    }
+    
+    #name,
+    #email {
+      text-align:right;
+    }
+
     hr {
       border: 0;
       display:block;
@@ -178,26 +244,28 @@ fieldset {
       overflow: visible; 
       text-align: center;
       height: 2px;
-      margin-top: -4px;
+      margin-top: -6px;
     }
+
+    .three {
+      border: none;
+      border-top: 4px #2d3945;
+      overflow: visible; 
+      text-align: center;
+      height: 2px;
+      margin-top: -8px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
 
     .contact,
     .choice,
     .topics {
       display:flex;
       flex-direction: row;
+      margin-left: -16px
     }
-
-    /* .format {
-      display:inline-block;
-      flex-direction: column;
-
-       flex-direction:row;
-      background-color: #ADACB5; 
-      width: 100%;
-      margin: 0 0; 
-      padding:0 0;
-    } */
 
     .choice {
       font-size: 16px;
@@ -209,16 +277,17 @@ fieldset {
       align-items: flex-end;
       display: inline-block;
       flex-direction:column;
+      line-height: 2rem;
     }
 
+    .input:focus {
+      border: 1px #46698b; 
+      background-color:#eff0f1;
+    }
     .checkbox {
       margin: 12px 8px 12px 0;
       display: inline-block;
       flex-direction:column;
-    }
-
-    #ZipCode {
-      padding: 0 -40px;
     }
 
     .form {
@@ -245,6 +314,8 @@ fieldset {
       width:100%;
       margin: 0 auto;
       height: 100px;
+      border:none;
+      border-radius:4px;
     }
     .button {
       padding: 20px;
@@ -253,9 +324,13 @@ fieldset {
       /* margin: 0 auto; */
       margin-top:20px
     }
+
+    .copyright {
+      font-style: italic;
+    }
 }
 
-input:focus {
+.input:focus {
   background-color: #eff0f1;
   border: 1px solid #46698b;
 }

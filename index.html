@@ -18,23 +18,26 @@
 
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right to your inbox</p>
+        <br>
+    </div>
 
-    
     <hr>
     <hr class="one">
     <hr class="two"> 
 
     <main>
        
-        <legend><h2>Contact Information</h2></legend>
+        
                 <form>
-                        <fieldset class="contact">
-                            <label class="label" for="Name">Full Name</label>
-                            <input class="placeholder" type="text" id="Name" name="user_name" placeholder="Required" required>
+                    <fieldset class="contact">
+                        <legend><h2>Contact Information</h2></legend>
                             
-                            <label class="label" for="Email">Email Address</label>
+                            <label class="label" for="Name">Full Name</label>
+                            <input class="placeholder required" type="text" id="Name" name="user_name" placeholder="Required" required>
+                            
+                            <label class="label required" for="Email">Email Address</label>
                             <input class="placeholder" type="email" id="Email" name="user_email" placeholder="Required" required>
-
+                           
                             <label class="label" for="Phone">Phone Number</label>
                             <input class="placeholder" type="tel" id="Phone" name="user_phone" placeholder="Your Phone Number">
 
@@ -45,7 +48,7 @@
                             <input class="placeholder" type="text" id="City" name="user_city" placeholder="Your City">
 
                             <label class="label" for="State">State</label>
-                            <select class="placeholder" type="text" id="State" name="user_state" placeholder="Your State">
+                            <select class="placeholder" id="State" name="user_state">
                                     <option value="Alabama">Alabama</option>
                                     <option value="Arizona">Arizona</option>
                                     <option value="Alaska">Alaska</option>
@@ -100,38 +103,43 @@
 
                             <label class="label" for="ZipCode">Zip Code</label>
                             <input class="placeholder" type="text" id="ZipCode" name="user_zipcode" placeholder="Zip Code">
-                        </fieldset>
-                    </form> 
-        <legend><h2>Newsletter</h2></legend>
-                <form>
-                    <fieldset class="format">
-                        <h3>Select the newsletter you'd like to receive</h3>
-
-                                <div class="choice" id="subscription" name="user_subscription">
-                                        <input type="checkbox" value="HTML Newsletter"><label class="light" for="HTMLNewsletter">HTML News</label><br>
-                                        <input type="checkbox" value="CSS News"><label class="light" for="CSSNews">CSS News</label><br>
-                                        <input type="checkbox" value="Javascript News"><label class="light" for="JavascriptNews">Javascript News</label>
-                                </div>
-
-                        <h3>Newsletter Format</h3>
-                                <div class="choice"  id="format" name="user_format">
-                                    <input type="radio" value="HTML"><label class="light" for="HTML">HTML</label><br>
-                                    <input type="radio" value="Text"><label class="light" for="PlainText">Plain Text</label>   
-                                </div> 
-
-                        <h3>Other topics you'd like to hear about</h3>
-                                <textarea id="topics" name="user_topics"></textarea>
-                        
-                        
-                            <button class="button" type="submit">Sign Up</button>
                     </fieldset>
+                
+                    <br>
+                    <br>
+                    <hr class="three"> 
+        
+                    <div class="background-color" id="background">
+                        <fieldset class="format">
+                            <legend><h2>Newsletter</h2></legend>
+                                <h3>Select the newsletter you'd like to receive</h3>
+
+                                    <div class="choice" id="subscription">
+                                            <input type="checkbox" name="HTML-Newsletter" id="HTML-Newsletter"><label class="light" for="HTML-Newsletter">HTML News</label><br>
+                                            <input type="checkbox" name="CSS-News" id="CSS-News"><label class="light" for="CSS-News">CSS News</label><br>
+                                            <input type="checkbox" name="Javascript-News" id="Javascript-News"><label class="light" for="Javascript-News">Javascript News</label>
+                                    </div>
+
+                            <h3>Newsletter Format</h3>
+                                    <div class="choice"  id="format">
+                                        <input type="radio" name="HTML" id="HTML"><label class="light" for="HTML">HTML</label><br>
+                                        <input type="radio" name="Text" id="Text"><label class="light" for="Text">Plain Text</label>   
+                                    </div> 
+
+                            <h3>Other topics you'd like to hear about</h3>
+                                    <textarea id="topics" name="user_topics"></textarea>
+                            
+                            
+                                <button class="button" type="submit">Sign Up</button>
+                        </fieldset>
+                    </div>
                 </form>
-    </div>
+    
 
     </main>
 
     <footer>
-        <p>Copyright. The Code Review.</p>
+        <p class="copyright">Copyright The Code Review</p>
     </footer>
     
 </body>
