@@ -30,25 +30,27 @@
         
                 <form>
                     <fieldset class="contact">
-                        <legend><h2>Contact Information</h2></legend>
+                        <legend>Contact Information</legend>
                             
                             <label class="label" for="Name">Full Name</label>
+                            <span class="focus-border"></span>
                             <input class="placeholder required" type="text" id="Name" name="user_name" placeholder="Required" required>
                             
                             <label class="label required" for="Email">Email Address</label>
                             <input class="placeholder" type="email" id="Email" name="user_email" placeholder="Required" required>
                            
                             <label class="label" for="Phone">Phone Number</label>
-                            <input class="placeholder" type="tel" id="Phone" name="user_phone" placeholder="Your Phone Number">
+                            <input class="placeholder type="tel" id="Phone" name="user_phone" placeholder="Your Phone Number">
 
                             <label class="label" for="Address">Street Address</label>
-                            <input class="placeholder" type="text" id="Address" name="user_address" placeholder="Street Address">
+                            <input class="placeholder " type="text" id="Address" name="user_address" placeholder="Street Address">
 
                             <label class="label" for="City">City</label>
                             <input class="placeholder" type="text" id="City" name="user_city" placeholder="Your City">
 
                             <label class="label" for="State">State</label>
                             <select class="placeholder" id="State" name="user_state">
+                                <option value="">Choose a State</option> 
                                     <option value="Alabama">Alabama</option>
                                     <option value="Arizona">Arizona</option>
                                     <option value="Alaska">Alaska</option>
@@ -110,20 +112,20 @@
                     <hr class="three"> 
         
                     <div class="background-color" id="background">
-                        <fieldset class="format">
-                            <legend><h2>Newsletter</h2></legend>
+                        <fieldset class="contact">
+                            <legend>Newsletter</legend>
                                 <h3>Select the newsletter you'd like to receive</h3>
 
                                     <div class="choice" id="subscription">
-                                            <input type="checkbox" name="HTML-Newsletter" id="HTML-Newsletter"><label class="light" for="HTML-Newsletter">HTML News</label><br>
-                                            <input type="checkbox" name="CSS-News" id="CSS-News"><label class="light" for="CSS-News">CSS News</label><br>
-                                            <input type="checkbox" name="Javascript-News" id="Javascript-News"><label class="light" for="Javascript-News">Javascript News</label>
+                                            <input type="checkbox" name="HTML-Newsletter" id="HTML-Newsletter"><label class="container" for="HTML-Newsletter">HTML News</label><br>
+                                            <input type="checkbox" name="CSS-News" id="CSS-News"><label class="container" for="CSS-News">CSS News</label><br>
+                                            <input type="checkbox" name="Javascript-News" id="Javascript-News"><label class="container" for="Javascript-News">Javascript News</label>
                                     </div>
 
                             <h3>Newsletter Format</h3>
                                     <div class="choice"  id="format">
-                                        <input type="radio" name="HTML" id="HTML"><label class="light" for="HTML">HTML</label><br>
-                                        <input type="radio" name="Text" id="Text"><label class="light" for="Text">Plain Text</label>   
+                                        <input type="radio" name="HTML" id="HTML"><label class="container" for="HTML">HTML</label><br>
+                                        <input type="radio" name="Text" id="Text"><label class="container" for="Text">Plain Text</label>   
                                     </div> 
 
                             <h3>Other topics you'd like to hear about</h3>
